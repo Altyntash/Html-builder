@@ -6,5 +6,5 @@ const readStream = fs.createReadStream(filePath, 'utf-8');
 
 readStream
   .on('data', (chunk) => console.log(chunk))
-  .on('error', (error) => console.log(error)
-  .on('end', () => readableStream.close());
+  .on('error', (error) => console.log(error))
+  .on('end', () => readStream.close());
